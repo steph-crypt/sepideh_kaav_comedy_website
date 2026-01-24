@@ -187,7 +187,7 @@ function App() {
               Her humor has been described as dark and unfiltered while shedding light on unnecessary truths. 
               </p>
               <div className="persianality-disorder">
-              <h3>Persianality Disorder</h3>
+              <h3>Solo Show: Persianality Disorder</h3>
             <p>
             Persianality Disorder:
             Persianality Disorder is her attempt to make sense of growing up in Iran,
