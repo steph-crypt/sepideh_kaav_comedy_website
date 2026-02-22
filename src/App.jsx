@@ -4,6 +4,14 @@ import InstagramIcon from './instagram-svgrepo-com.svg'
 import TikTokIcon from './tiktok-svgrepo-com.svg'
 import YouTubeIcon from './youtube-168-svgrepo-com.svg'
 
+const shows = [
+  {
+    title: 'Persianality Disorder, Berlin',
+    date: 'March 21, 2026',
+    location: 'z-bar, bergstraße 2',
+    ticketUrl: 'https://www.eventbrite.co.uk/e/persianality-disorder-dark-comedy-show-tickets-1983723934689?aff=web',
+  }
+]
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -151,28 +159,26 @@ function App() {
 
       <section id="shows" className="shows-section">
         <div className="container">
-          <h2 className="section-title">Upcoming Shows</h2>
-          <div className="shows-grid">
-            <div className="show-card">
-              <h3>Comedy Club NYC</h3>
-              <p className="show-date">February 15, 2026</p>
-              <p className="show-location">New York, NY</p>
-              <button className="show-button">Get Tickets</button>
-            </div>
-            <div className="show-card">
-              <h3>Laugh Factory LA</h3>
-              <p className="show-date">March 2, 2026</p>
-              <p className="show-location">Los Angeles, CA</p>
-              <button className="show-button">Get Tickets</button>
-            </div>
-            <div className="show-card">
-              <h3>Comedy Central Live</h3>
-              <p className="show-date">March 20, 2026</p>
-              <p className="show-location">Chicago, IL</p>
-              <button className="show-button">Get Tickets</button>
-            </div>
-          </div>
-        </div>
+    <h2 className="section-title">Upcoming Shows</h2>
+        <div className="shows-grid">
+  {shows.map((show) => (
+    <div className="show-card" key={`${show.title}-${show.date}`}>
+      <h3>{show.title}</h3>
+      <p className="show-date">{show.date}</p>
+      <p className="show-location">{show.location}</p>
+
+      <a
+        href={show.ticketUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="show-button"
+      >
+        Get Tickets
+      </a>
+    </div>
+  ))}
+</div>
+</div>
       </section>
 
       <section id="about" className="about-section">
@@ -245,32 +251,6 @@ function App() {
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="mailing-list" className="mailing-list-section">
-        <div className="container">
-          <h2 className="section-title">Join the Mailing List</h2>
-          <p className="mailing-list-subtitle">
-            Get updates on shows, new content, and more.
-          </p>
-          <form className="mailing-list-form" onSubmit={handleMailingListSubmit}>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="mailing-list-input"
-              required
-              aria-label="Email address"
-            />
-            <button type="submit" className="mailing-list-button">
-              Subscribe
-            </button>
-          </form>
-          {mailingListStatus === 'success' && (
-            <p className="mailing-list-message">Thanks for subscribing!</p>
-          )}
         </div>
       </section>
 

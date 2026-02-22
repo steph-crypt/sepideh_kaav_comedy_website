@@ -312,6 +312,9 @@ section {
 }
 
 .show-button {
+  display: block;
+  text-decoration: none;
+
   background: #00ddff;
   color: #000;
   border: none;
@@ -321,11 +324,11 @@ section {
   font-weight: 600;
   transition: all 0.3s ease;
   width: 100%;
+  text-align: center;
 }
 
 .show-button:hover {
   background: #ffed4e;
-  transform: scale(1.05);
 }
 
 /* About Section */
