@@ -148,12 +148,23 @@ function App() {
         <div className="hero-content">
           <h1 className="hero-title">Sepideh Kaav</h1>
           <p className="hero-subtitle">Stand-Up Comedian</p>
-          <button
-            className="cta-button"
-            onClick={() => scrollToSection('shows')}
-          >
-            See Upcoming Shows
-          </button>
+          <div className="hero-buttons">
+  <button
+    className="cta-button"
+    onClick={() => scrollToSection('shows')}
+  >
+    See Upcoming Shows
+  </button>
+
+  <a
+    href="https://form.jotform.com/sepcomedy/tell-me-where-to-perform"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="cta-button secondary-cta"
+  >
+    Tell me where to perform
+  </a>
+</div>
         </div>
       </section>
 
