@@ -181,12 +181,19 @@ body {
   letter-spacing: 1px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px; /* space between buttons */
+}
+
 .cta-button {
   background: #ffd700;
   color: #000;
   border: none;
   padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border-radius: 50px;
   cursor: pointer;
@@ -199,6 +206,21 @@ body {
   background: #ffed4e;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.secondary-cta {
+  text-decoration: none;
+  background: #ffd710;
+  color: #001;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease 0.4s both;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 @keyframes fadeInUp {
