@@ -6,10 +6,10 @@ import YouTubeIcon from './youtube-168-svgrepo-com.svg'
 
 const shows = [
   {
-    title: 'Persianality Disorder, Berlin',
-    date: 'March 21, 2026',
-    location: 'z-bar, bergstraße 2',
-    ticketUrl: 'https://www.eventbrite.co.uk/e/persianality-disorder-dark-comedy-show-tickets-1983723934689?aff=web',
+    title: 'B*tch Circle, Berlin',
+    date: 'March 28, 2026',
+    location: 'Karakas Kurfürstenstraße 9, 10785 Berlin',
+    ticketUrl: 'https://fienta.com/b-tch-circle-a-dark-comedy-show-in-english',
   }
 ]
 
